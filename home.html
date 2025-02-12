@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen App 2030</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Canteen App <span>2030</span></h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                <li><a href="{% url 'orders' %}">Orders</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'logout' %}" class="btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h2>Welcome to the Future of <span>Canteen Ordering</span></h2>
+            <p>Fast, easy, and smart food ordering at your fingertips.</p>
+            <a href="{% url 'menu' %}" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <h3>🚀 Quick Ordering</h3>
+            <p>Order your favorite meals in seconds with our smart system.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🔄 Live Order Tracking</h3>
+            <p>Track your food in real-time from preparation to delivery.</p>
+        </div>
+        <div class="feature-box">
+            <h3>💳 Secure Payments</h3>
+            <p>Fast and safe payments with UPI, cards, and wallets.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2030 Canteen App. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
